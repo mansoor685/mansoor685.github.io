@@ -5,6 +5,33 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { Bloom, EffectComposer } from '@react-three/postprocessing';
 import * as THREE from 'three';
 
+// Custom grid geometry helper
+class GridGeometry extends THREE.BufferGeometry {
+  constructor(width = 10, height = 10, widthSegments = 10, heightSegments = 10) {
+    super();
+
+    const vertices: number[] = [];
+    const halfWidth = width / 2;
+    const halfHeight = height / 2;
+
+    // Horizontal lines
+    for (let i = 0; i <= heightSegments; i++) {
+      const y = (i / heightSegments) * height - halfHeight;
+      vertices.push(-halfWidth, y, 0);
+      vertices.push(halfWidth, y, 0);
+    }
+
+    // Vertical lines
+    for (let i = 0; i <= widthSegments; i++) {
+      const x = (i / widthSegments) * width - halfWidth;
+      vertices.push(x, -halfHeight, 0);
+      vertices.push(x, halfHeight, 0);
+    }
+
+    this.setAttribute('position', new THREE.Float32BufferAttribute(vertices, 3));
+  }
+}
+
 function MinimalWireframeGrid() {
   const gridRef = useRef<THREE.LineSegments>(null);
   const mousePosition = useRef({ x: 0, y: 0 });
@@ -12,7 +39,7 @@ function MinimalWireframeGrid() {
   const geometry = useMemo(() => {
     const size = 26;
     const divisions = 24;
-    return new THREE.GridGeometry(size, size, divisions, divisions);
+    return new GridGeometry(size, size, divisions, divisions);
   }, []);
 
   useFrame((state) => {
@@ -64,33 +91,6 @@ function MinimalWireframeGrid() {
       />
     </lineSegments>
   );
-}
-
-// Custom grid geometry helper
-class GridGeometry extends THREE.BufferGeometry {
-  constructor(width = 10, height = 10, widthSegments = 10, heightSegments = 10) {
-    super();
-
-    const vertices: number[] = [];
-    const halfWidth = width / 2;
-    const halfHeight = height / 2;
-
-    // Horizontal lines
-    for (let i = 0; i <= heightSegments; i++) {
-      const y = (i / heightSegments) * height - halfHeight;
-      vertices.push(-halfWidth, y, 0);
-      vertices.push(halfWidth, y, 0);
-    }
-
-    // Vertical lines
-    for (let i = 0; i <= widthSegments; i++) {
-      const x = (i / widthSegments) * width - halfWidth;
-      vertices.push(x, -halfHeight, 0);
-      vertices.push(x, halfHeight, 0);
-    }
-
-    this.setAttribute('position', new THREE.Float32BufferAttribute(vertices, 3));
-  }
 }
 
 function AbstractWireframeSphere({ position, size = 1.5, color = '#00bfff' }: any) {
