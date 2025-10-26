@@ -1,0 +1,12 @@
+// Export all 3D components for easy import
+export { default as FloatingShapes } from './FloatingShapes';
+export { default as Interactive3DCard } from './Interactive3DCard';
+export { default as ParticleField } from './ParticleField';
+export { default as WaveBackground } from './WaveBackground';
+export { default as LowPolyWireframe } from './LowPolyWireframe';
+export { default as WireframeTerrain3D } from './WireframeTerrain3D';
+export { default as MinimalWireframe } from './MinimalWireframe';
+export { default as MatrixAnimation } from './MatrixAnimation';
+export { default as ProfessionalAnimation } from './ProfessionalAnimation';
+export { default as AestheticAnimation } from './AestheticAnimation';
+export { default as VantaBackground } from './VantaBackground';
