@@ -170,7 +170,7 @@ const About = () => {
                 className="glass-effect rounded-xl p-6 text-center border border-white/10"
               >
                 <div className="text-3xl font-bold gradient-text mb-1">
-                  2+
+                  5+
                 </div>
                 <div className="text-xs text-gray-400 font-medium">Years Experience</div>
               </motion.div>
@@ -180,7 +180,7 @@ const About = () => {
                 className="glass-effect rounded-xl p-6 text-center border border-white/10"
               >
                 <div className="text-3xl font-bold gradient-text mb-1">
-                  7+
+                  25+
                 </div>
                 <div className="text-xs text-gray-400 font-medium">Major Projects</div>
               </motion.div>

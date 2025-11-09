@@ -5,14 +5,14 @@ export const personalInfo = {
   email: "mansoor1122000@gmail.com",
   github: "https://github.com/mansoorahmed786",
   linkedin: "https://www.linkedin.com/in/mansoor-ahmed-052292218/",
-  bio: "Passionate Full Stack Developer with 2+ years of experience in full-stack development, specializing in building scalable web applications, RESTful APIs, and AI-powered solutions. Proficient in Python, JavaScript, React, Django, FastAPI, and modern cloud technologies. Strong focus on creating efficient, user-centric solutions with expertise in microservices architecture, CI/CD pipelines, and database optimization."
+  bio: "Passionate Full Stack Developer with 5+ years of experience in full-stack development, specializing in building scalable web applications, RESTful APIs, and AI-powered solutions. Proficient in Python, JavaScript, React, Django, FastAPI, and modern cloud technologies. Strong focus on creating efficient, user-centric solutions with expertise in microservices architecture, CI/CD pipelines, and database optimization."
 };
 
 export const experience = [
   {
     company: "Openng",
     role: "Full Stack Developer",
-    duration: "June 2025 - Present",
+    duration: "January 2025 - Present",
     location: "Remote",
     achievements: [
       "Built RESTful APIs with FastAPI for patient, doctor, and appointment management.",
@@ -22,9 +22,23 @@ export const experience = [
     ]
   },
   {
+    company: "Secure RX",
+    role: "AI/ML Engineer & Full Stack Developer",
+    duration: "January 2024 - December 2024",
+    location: "Remote (Canada)",
+    achievements: [
+      "Managing comprehensive pharmacy medication management system with real-time inventory tracking and automated prescription processing.",
+      "Developed and deployed AI object detection models on GPU infrastructure for medication identification and verification.",
+      "Architected and maintained AWS cloud infrastructure including EC2 GPU instances, S3 storage, and Lambda functions for model inference.",
+      "Implemented custom AI model training pipelines for pharmaceutical product recognition achieving 95%+ accuracy.",
+      "Built scalable RESTful APIs with FastAPI to serve real-time predictions and integrate AI models with frontend applications.",
+      "Optimized model performance through quantization and pruning techniques, reducing inference time by 40%."
+    ]
+  },
+  {
     company: "Linked Matrix",
     role: "Associate Software Engineer",
-    duration: "August 2023 - June 2025",
+    duration: "September 2021 - December 2024",
     location: "Onsite",
     achievements: [
       "Developed an automated educational workflow platform using Django and GraphQL, replacing manual CSV processes.",
