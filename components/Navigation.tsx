@@ -96,6 +96,17 @@ const Navigation = () => {
                 <span className="relative z-10 whitespace-nowrap">{link.label}</span>
               </motion.a>
             ))}
+            
+            {/* Download Resume Button */}
+            <motion.a
+              href="/mansoor.pdf"
+              download="Mansoor_Ahmed_Resume.pdf"
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="ml-2 px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-600 text-white text-sm font-medium rounded-lg shadow-lg hover:shadow-blue-500/50 transition-all"
+            >
+              Resume
+            </motion.a>
           </div>
 
           {/* Mobile menu button */}
@@ -135,6 +146,16 @@ const Navigation = () => {
               {link.label}
             </a>
           ))}
+          
+          {/* Download Resume Button - Mobile */}
+          <a
+            href="/mansoor.pdf"
+            download="Mansoor_Ahmed_Resume.pdf"
+            onClick={() => document.getElementById('mobile-menu')?.classList.add('hidden')}
+            className="block px-4 py-3 rounded-lg text-base font-medium bg-gradient-to-r from-blue-500 to-purple-600 text-white text-center"
+          >
+            Download Resume
+          </a>
         </div>
       </div>
     </motion.nav>

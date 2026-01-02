@@ -5,7 +5,7 @@ export const personalInfo = {
   email: "mansoor1122000@gmail.com",
   github: "https://github.com/mansoorahmed786",
   linkedin: "https://www.linkedin.com/in/mansoor-ahmed-052292218/",
-  bio: "Passionate Full Stack Developer with 5+ years of experience in full-stack development, specializing in building scalable web applications, RESTful APIs, and AI-powered solutions. Proficient in Python, JavaScript, React, Django, FastAPI, and modern cloud technologies. Strong focus on creating efficient, user-centric solutions with expertise in microservices architecture, CI/CD pipelines, and database optimization."
+  bio: "Passionate Full Stack Developer with 3+ years of experience in full-stack development, specializing in building scalable web applications, RESTful APIs, and AI-powered solutions. Proficient in Python, JavaScript, React, Django, FastAPI, and modern cloud technologies. Strong focus on creating efficient, user-centric solutions with expertise in microservices architecture, CI/CD pipelines, and database optimization."
 };
 
 export const experience = [
@@ -38,7 +38,7 @@ export const experience = [
   {
     company: "Linked Matrix",
     role: "Associate Software Engineer",
-    duration: "September 2021 - December 2024",
+    duration: "September 2022 - December 2024",
     location: "Onsite",
     achievements: [
       "Developed an automated educational workflow platform using Django and GraphQL, replacing manual CSV processes.",
@@ -65,7 +65,7 @@ export const projects = [
     link: ""
   },
   {
-    title: "AI-Enhanced Pharmacy Management System",
+    title: "AI-Powered Pharmacy Inventory, Sales and Compliance Management System",
     description: "Pharmacy management system with OCR-based automation for inventory tracking and sales analytics.",
     techStack: ["React", "Django REST Framework", "TensorFlow", "OCR"],
     highlights: [
@@ -76,7 +76,7 @@ export const projects = [
     link: ""
   },
   {
-    title: "Property Management System",
+    title: "Cloud-Based Multi-Tenant Property and Lease Management Platform",
     description: "Multi-app microservices architecture for comprehensive property management deployed on GCP.",
     techStack: ["Django", "Google Cloud Platform", "App Engine", "Cloud Tasks", "PostgreSQL"],
     highlights: [
@@ -87,7 +87,7 @@ export const projects = [
     link: ""
   },
   {
-    title: "AI Bot Development",
+    title: "Multi-Provider AI Chatbot Platform with Mobile and Serverless Architecture",
     description: "Created chat wrapper clients for AI providers with React Native mobile and web applications.",
     techStack: ["Python", "React Native", "AWS Lambda", "OpenAI"],
     highlights: [
@@ -99,7 +99,7 @@ export const projects = [
     link: ""
   },
   {
-    title: "Strawberry GraphQL App",
+    title: "Enterprise-Grade GraphQL Data Ingestion and Validation System for Education Platforms",
     description: "Robust backend system using Strawberry GraphQL to ingest, validate, and process large volumes of school data.",
     techStack: ["Strawberry GraphQL", "Python", "CSV Processing"],
     highlights: [
@@ -110,7 +110,7 @@ export const projects = [
     link: ""
   },
   {
-    title: "Anvil Apps",
+    title: "AI-Integrated Low-Code Business Applications with Optimized SQL Backends",
     description: "End-to-end web applications with AI integration built on Anvil's low-code platform.",
     techStack: ["Anvil", "AI Integration", "SQL"],
     highlights: [
