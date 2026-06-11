@@ -5,7 +5,7 @@ export const personalInfo = {
   email: "mansoor1122000@gmail.com",
   github: "https://github.com/mansoorahmed786",
   linkedin: "https://www.linkedin.com/in/mansoor-ahmed-052292218/",
-  bio: "Passionate Full Stack Developer with 3+ years of experience in full-stack development, specializing in building scalable web applications, RESTful APIs, and AI-powered solutions. Proficient in Python, JavaScript, React, Django, FastAPI, and modern cloud technologies. Strong focus on creating efficient, user-centric solutions with expertise in microservices architecture, CI/CD pipelines, and database optimization."
+  bio: "Passionate Full Stack Developer with 5+ years of experience in full-stack development, specializing in building scalable web applications, RESTful APIs, and AI-powered solutions. Proficient in Python, JavaScript, React, Django, FastAPI, and modern cloud technologies. Strong focus on creating efficient, user-centric solutions with expertise in microservices architecture, CI/CD pipelines, and database optimization."
 };
 
 export const experience = [
@@ -24,7 +24,7 @@ export const experience = [
   {
     company: "Secure RX",
     role: "AI/ML Engineer & Full Stack Developer",
-    duration: "January 2024 - December 2024",
+    duration: "January 2023 - December 2024",
     location: "Remote (Canada)",
     achievements: [
       "Managing comprehensive pharmacy medication management system with real-time inventory tracking and automated prescription processing.",
@@ -38,7 +38,7 @@ export const experience = [
   {
     company: "Linked Matrix",
     role: "Associate Software Engineer",
-    duration: "September 2022 - December 2024",
+    duration: "September 2021 - December 2023",
     location: "Onsite",
     achievements: [
       "Developed an automated educational workflow platform using Django and GraphQL, replacing manual CSV processes.",
