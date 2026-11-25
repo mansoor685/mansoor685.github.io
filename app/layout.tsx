@@ -1,9 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Fraunces } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const fraunces = Fraunces({
+  variable: "--font-serif",
   subsets: ["latin"],
 });
 
@@ -13,13 +18,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mansoor Ahmed - Full Stack Developer",
-  description: "Full Stack Developer with 2+ years of experience in full-stack development, specializing in Python, JavaScript, React, Django, FastAPI, and cloud technologies. Building scalable web applications and AI-powered solutions.",
-  keywords: ["Full Stack Developer", "React", "Django", "FastAPI", "Next.js", "Python", "JavaScript", "Web Development", "AI Development"],
+  title: "Mansoor Ahmed | Full Stack & AI Engineer",
+  description: "Full Stack & AI Engineer with 5+ years of experience in full-stack development, specializing in Python, JavaScript, React, Django, FastAPI, and cloud technologies. Building AI-powered products, SaaS platforms and scalable web applications.",
+  keywords: ["Full Stack Developer", "React", "Django", "FastAPI", "Next.js", "Python", "JavaScript", "Web Development", "AI Development", "RAG", "Voice AI", "Freelance Developer"],
   authors: [{ name: "Mansoor Ahmed" }],
   openGraph: {
-    title: "Mansoor Ahmed - Full Stack Developer",
-    description: "Full Stack Developer specializing in Python, JavaScript, React, and cloud technologies",
+    title: "Mansoor Ahmed | Full Stack & AI Engineer",
+    description: "Full Stack & AI Engineer: RAG platforms, voice AI, AI document automation, Next.js and Django.",
     type: "website",
   },
 };
@@ -32,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${fraunces.variable} antialiased`}
       >
         {children}
       </body>

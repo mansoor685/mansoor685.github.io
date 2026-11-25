@@ -33,9 +33,9 @@ const VantaBackground = () => {
           minWidth: 200.00,
           scale: 1.00,
           scaleMobile: 1.00,
-          color: 0x3b82f6, // Blue from your brand
-          color2: 0x8b5cf6, // Purple secondary color
-          backgroundColor: 0x0a0a0f, // Your background
+          color: 0xc9a86a, // Gold accent
+          color2: 0x4a6a94, // Soft navy-blue
+          backgroundColor: 0x0f1b2d, // Navy background
           size: 1.20,
           spacing: 15.00,
         });
@@ -58,7 +58,7 @@ const VantaBackground = () => {
     <div
       ref={vantaRef}
       className="fixed inset-0 pointer-events-none z-0"
-      style={{ width: '100%', height: '100vh' }}
+      style={{ width: '100%', height: '100vh', opacity: 0.35 }}
     />
   );
 };

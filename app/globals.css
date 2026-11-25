@@ -1,13 +1,25 @@
 @import "tailwindcss";
 
+@theme {
+  --color-navy-950: #0F1B2D;
+  --color-navy-900: #162840;
+  --color-navy-800: #1F3452;
+  --color-navy-700: #2A4466;
+  --color-cream: #E8E2D6;
+  --color-mist: #9AA6B8;
+  --color-gold: #C9A86A;
+  --color-gold-light: #E3C891;
+  --color-gold-dark: #A8874F;
+}
+
 @layer base {
   :root {
-    --background: #0a0a0f;
-    --foreground: #e4e4e7;
-    --primary: #3b82f6;
-    --secondary: #8b5cf6;
+    --background: #0F1B2D;
+    --foreground: #E8E2D6;
+    --primary: #C9A86A;
+    --secondary: #A8874F;
     --accent: #f59e0b;
-    --card-bg: #1a1a24;
+    --card-bg: #162840;
   }
 
   * {
@@ -151,38 +163,39 @@
   }
 
   ::-webkit-scrollbar-track {
-    background: #1a1a24;
+    background: #0F1B2D;
   }
 
   ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, #3b82f6, #8b5cf6);
+    background: linear-gradient(180deg, #C9A86A, #A8874F);
     border-radius: 5px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: linear-gradient(180deg, #2563eb, #7c3aed);
+    background: linear-gradient(180deg, #E3C891, #C9A86A);
   }
 
   /* Selection */
   ::selection {
-    background-color: #3b82f6;
-    color: white;
+    background-color: #C9A86A;
+    color: #0F1B2D;
   }
 
   /* Glass Effect */
   .glass-effect {
-    background: rgba(26, 26, 36, 0.7);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(22, 40, 64, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(232, 226, 214, 0.08);
+    box-shadow: 0 8px 24px rgba(5, 12, 24, 0.35);
   }
 
   /* Gradient Text */
   .gradient-text {
-    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #ec4899 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--color-gold);
+    font-family: var(--font-serif), Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
   }
 
   /* Card 3D Effect */
@@ -267,15 +280,15 @@
 
   /* Professional Shadows */
   .shadow-glow {
-    box-shadow: 0 0 40px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 6px 18px rgba(201, 168, 106, 0.18);
   }
 
   .shadow-glow-purple {
-    box-shadow: 0 0 40px rgba(139, 92, 246, 0.3);
+    box-shadow: 0 6px 18px rgba(201, 168, 106, 0.18);
   }
 
   .shadow-glow-gold {
-    box-shadow: 0 0 40px rgba(245, 158, 11, 0.3);
+    box-shadow: 0 6px 18px rgba(245, 158, 11, 0.18);
   }
 
   /* Line Clamp */
@@ -292,4 +305,16 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
+}
+
+/* Headings: refined serif */
+h1, h2 {
+  font-family: var(--font-serif), Georgia, serif;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+}
+
+h3 {
+  font-family: var(--font-serif), Georgia, serif;
+  font-weight: 500;
 }
